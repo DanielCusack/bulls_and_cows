@@ -1,4 +1,7 @@
 # bulls_and_cows
+
+![example_image](https://user-images.githubusercontent.com/43294211/45965246-e26b4480-c01f-11e8-9252-e4ff3cae5345.png)
+
 Bulls and Cows guessing game written in python using pygame
 
 This is a number guessing game where the player has to guess a 4 digit random number where no digit has the same number. The goal of the player is to guess the right number within 10 guesses.
