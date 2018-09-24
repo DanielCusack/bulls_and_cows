@@ -181,4 +181,11 @@ class Score_Board(Board):
         self.hit = 0
         self.blow = 0
         self.colour_board()
-        self.score_display(screen)    
+        self.score_display(screen)
+    
+    def display_text(self, screen, text, delay):
+        self.colour_board()
+        self.add_text(text, int(self.width/2), int(self.height/2))
+        self.place_board(screen)
+        pygame.display.update()
+        pygame.time.wait(delay) 

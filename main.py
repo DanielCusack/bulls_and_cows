@@ -83,6 +83,7 @@ input_board = Input_Board(int(ww*1/4), int(wh/8), (int(ww*3/8),int(wh*2/8)), (10
 input_board.colour_board()
 input_board.number_display(window)
 
+print(state.real_number)
 pygame.display.update()
 
 while running:
@@ -126,17 +127,13 @@ while running:
     
     if state.guesses_used == state.total_guess_number or score_board.hit == 4:
         if score_board.hit == 4:
-            score_board.colour_board()
-            score_board.add_text('You Win!', int(score_board.width/2), int(score_board.height/2))
-            score_board.place_board(window)
-            pygame.display.update()
-            pygame.time.wait(1000)
+            score_board.display_text(window, 'You win!', 1000)
+            score_board.display_text(window, 'The number was', 1000)
+            score_board.display_text(window, '{}'.format(''.join(state.real_number)), 1000)
         else:
-            score_board.colour_board()
-            score_board.add_text('You Lose!', int(score_board.width/2), int(score_board.height/2))
-            score_board.place_board(window)
-            pygame.display.update()
-            pygame.time.wait(1000)
+            score_board.display_text(window, 'You lose,', 1000)
+            score_board.display_text(window, 'the number was', 1000)
+            score_board.display_text(window, '{}'.format(''.join(state.real_number)), 1000)
         
         score_board.reset_board(window)
         input_board.reset_board(window)
