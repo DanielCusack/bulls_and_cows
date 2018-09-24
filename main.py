@@ -83,7 +83,7 @@ input_board = Input_Board(int(ww*1/4), int(wh/8), (int(ww*3/8),int(wh*2/8)), (10
 input_board.colour_board()
 input_board.number_display(window)
 
-print(state.real_number)
+#print(state.real_number)
 pygame.display.update()
 
 while running:
