@@ -1,9 +1,9 @@
 '''
-This is a number guessing where the player has to guess a 4 digit random number
+This is a number guessing game where the player has to guess a 4 digit random number
 where no digit has the same number. The goal of the player is to guess the right
 number within 10 guesses. 
-After each guess, the player is given feedback on howclose there guess is to the
-real number. If the a guess shares a digit with the actual number, then this is
+After each guess, the player is given feedback on how close there guess is to the
+real number. If the guess shares a digit with the actual number, then this is
 counted as a hit. If the guess shares a number with the actual number but not a
 digit, then it is counted as a blow.
 
