@@ -17,7 +17,7 @@ guess = 1743
 In this case, the guess has 1 hit and 2 blows
 
 ## Installation and Dependencies
-Run `python main.py` to play the game. Also, pygame is needed for to run this game. This can be done most easily with the pip tool and can usually be run with the follow command:
+Run `python main.py` to play the game. Also, pygame is needed for to run this game. This can be done most easily with the pip tool and can usually be run with the following command:
 
 `pip install pygame` 
 
